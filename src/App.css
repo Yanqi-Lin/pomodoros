@@ -1,0 +1,10 @@
+@import '~antd/dist/antd.css';
+
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background:linear-gradient(35deg,#ccffe1, #ccd1ff);
+}
+
