@@ -5,6 +5,7 @@ import {
     UpOutlined,
     RedoOutlined,
     PlayCircleOutlined,
+    PauseOutlined,
 } from '@ant-design/icons';
 import CountDown from "./CountDown";
 import './Timer.css';
@@ -110,7 +111,7 @@ function Timer(props) {
                     id='start_stop'
                     onClick={() => props.startStopAction()}
                     shape="round"
-                    icon={<PlayCircleOutlined />}
+                    icon={props.isRunning ? <PauseOutlined /> : <PlayCircleOutlined />}
                 />
                 <Button
                     id='reset'
