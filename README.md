@@ -5,6 +5,7 @@ The Pomodoro Technique is a time management method developed by Francesco Cirill
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), maded only for learning coding.
 
+![image](https://user-images.githubusercontent.com/79801796/127756082-9c99c352-4630-4aea-a030-ce00c540e4d4.png)
 ## Available Scripts
 
 In the project directory, you can run:
