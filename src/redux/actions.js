@@ -27,30 +27,29 @@ export const resetAction = () => {
     }
 }
 
-export const breakDcrementAction = (data) => {
+export const breakDcrementAction = () => {
     return {
         type: BREAK_DECREMENT,
-        payload: data,
+
     }
 }
 
-export const breakIncrementAction = (data) => {
+export const breakIncrementAction = () => {
     return {
         type: BREAK_INCREMENT,
-        payload: data,
+
     }
 }
 
-export const sessionDecrementAction = (data) => {
+export const sessionDecrementAction = () => {
     return {
         type: SESSION_DECREMENT,
-        payload: data,
+
     }
 }
 
-export const sessionIncrementAction = (data) => {
+export const sessionIncrementAction = () => {
     return {
         type: SESSION_INCREMENT,
-        payload: data,
     }
 }

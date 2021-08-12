@@ -38,7 +38,7 @@ export default function reducer(state = INITIAL_STATE, action) {
                     playSoundElement(BEEP);
                     return {
                         ...state,
-                        current: state.break * 60,
+                        current: state.session * 60,
                         isSession: true,
                     }
                 }
