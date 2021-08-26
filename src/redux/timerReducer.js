@@ -1,6 +1,7 @@
 import {
     START_STOP,
     COUNTDOWN,
+    JUMP,
     RESET,
     BREAK_DECREMENT,
     BREAK_INCREMENT,
@@ -21,7 +22,7 @@ const INITIAL_STATE = {
     isSession: true,
 }
 
-export default function reducer(state = INITIAL_STATE, action) {
+export default function timerReducer(state = INITIAL_STATE, action) {
 
     switch (action.type) {
         case COUNTDOWN:
@@ -53,6 +54,27 @@ export default function reducer(state = INITIAL_STATE, action) {
                 ...state,
                 isRunning: !state.isRunning
             };
+        case JUMP:
+            resetSoundElement(BEEP);
+            if (state.isRunning) {
+                if (state.session) {
+                    return {
+                    ...state,
+                    isRunning: false,
+                    current: state.break * 60,
+                    isSession: false
+                    }
+                } 
+                if (state.session) {
+                    return {
+                    ...state,
+                    isRunning: false,
+                    current: state.session * 60,
+                    isSession: true
+                    }
+                }
+            }
+            return state;
         case RESET:
             resetSoundElement(BEEP);
             return INITIAL_STATE;

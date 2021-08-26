@@ -1,0 +1,7 @@
+.Pomodoros {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background:linear-gradient(35deg,#ccffe1, #ccd1ff); */
+}

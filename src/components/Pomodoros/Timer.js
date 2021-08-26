@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {  useEffect } from 'react';
 import { Card, Row, Col, Button } from 'antd';
 import {
     DownOutlined,
@@ -6,30 +6,32 @@ import {
     RedoOutlined,
     PlayCircleOutlined,
     PauseOutlined,
+    StepForwardOutlined,
 } from '@ant-design/icons';
 import CountDown from "./CountDown";
 import './Timer.css';
 import { connect } from 'react-redux';
 import {
     startStopAction,
+    jumpAction,
     countDownAction,
     resetAction,
     breakDcrementAction,
     breakIncrementAction,
     sessionDecrementAction,
     sessionIncrementAction,
-} from '../redux/actions';
+} from '../../redux/actions';
 
 function Timer(props) {
 
-    React.useEffect(() => {
+    useEffect(() => {
         const timeOut = () => {
-            setTimeout(() => props.countDownAction(), 1000);
+            console.log(1);
+            return setTimeout(() => props.countDownAction(), 1000);
         }
         if (props.isRunning) {
             timeOut()
-            clearTimeout(timeOut)
-        }
+        }       
     })
 
     return (
@@ -114,6 +116,12 @@ function Timer(props) {
                     icon={props.isRunning ? <PauseOutlined /> : <PlayCircleOutlined />}
                 />
                 <Button
+                    id='jump'
+                    onClick={() => props.jumpAction()}
+                    shape="round"
+                    icon={<StepForwardOutlined />}
+                />
+                <Button
                     id='reset'
                     onClick={() => props.resetAction()}
                     shape="round"
@@ -132,6 +140,7 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = {
     startStopAction,
     countDownAction,
+    jumpAction,
     resetAction,
     breakDcrementAction,
     breakIncrementAction,

@@ -1,6 +1,7 @@
 import {
     START_STOP,
     COUNTDOWN,
+    JUMP,
     RESET,
     BREAK_DECREMENT,
     BREAK_INCREMENT,
@@ -18,6 +19,12 @@ export const startStopAction = () => {
 export const countDownAction = () => {
     return {
         type: COUNTDOWN,
+    }
+}
+
+export const jumpAction = () => {
+    return {
+        type: JUMP,
     }
 }
 

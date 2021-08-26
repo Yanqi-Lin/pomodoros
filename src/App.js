@@ -1,16 +1,12 @@
-import { Provider } from 'react-redux';
-import { store } from './redux/store';
 import './App.css';
-import Timer from './components/Timer';
+import Pomodoros from './components/Pomodoros/Pomodoros';
 
 
 function App() {
   return (
-    <Provider store={store}>
       <div className="App">
-        <Timer />
+        <Pomodoros />
       </div>
-    </Provider>
   );
 }
 
