@@ -1,4 +1,4 @@
-import React, {  useEffect } from 'react';
+import React, { useEffect } from 'react';
 import { Card, Row, Col, Button } from 'antd';
 import {
     DownOutlined,
@@ -31,7 +31,7 @@ function Timer(props) {
         }
         if (props.isRunning) {
             timeOut()
-        }       
+        }
     })
 
     return (
