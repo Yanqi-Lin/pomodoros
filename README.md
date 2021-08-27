@@ -2,10 +2,28 @@
 
 The Pomodoro Technique is a time management method developed by Francesco Cirillo in the late 1980s.The technique uses a timer to break down work into intervals, traditionally 25 minutes in length, separated by short breaks last 5 minutes. Each interval is known as a pomodoro, from the Italian word for 'tomato', after the tomato-shaped kitchen timer that Cirillo used as a university student. If you want to know more about it, [click here](https://en.wikipedia.org/wiki/Pomodoro_Technique) to wikipedia.
 
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), maded only for learning coding.
-
 ![image](https://user-images.githubusercontent.com/79801796/127756082-9c99c352-4630-4aea-a030-ce00c540e4d4.png)
+
+# 部署create-react-app项目到Github pages
+想让大家能在线上看到前端页面，使用Github pages是很好的选择！
+部署上参考了文章[如何部署create-react-app项目到Github pages步骤](https://juejin.cn/post/6844903977897705485#heading-6),为了方便自己查阅，在此做简单的总结：
+
+1.打包编译、提交代码到 github 远程仓库
+```
+npm run build
+
+git add .
+git commit -m "test gh-pages"
+git push origin master
+```
+2.生成gh-pages分支
+```
+git subtree push --prefix=build origin gh-pages
+```
+
+
+<hr>
+
 ## Available Scripts
 
 In the project directory, you can run:
