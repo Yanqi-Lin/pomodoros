@@ -1,8 +1,7 @@
-.Pomodoros {
+.TodoList {
     min-height: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
-
+    border-right: 1px solid white;
 }
-/* 使用flex实现垂直居中 */

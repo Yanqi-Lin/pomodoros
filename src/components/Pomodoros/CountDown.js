@@ -20,7 +20,6 @@ function CountDown(props) {
                 type="circle"
                 percent={percent}
                 format={() => display}
-            // strokeColor="#37a9ffd9"
             />
         </div>
     )

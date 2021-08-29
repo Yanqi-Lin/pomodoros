@@ -1,0 +1,13 @@
+@import '~antd/dist/antd.css';
+
+.TodoListBox {
+  padding: 10px;
+  /* border: 1px solid #ddd; */
+  border-radius: 5px;
+  height:100%;
+}
+.TodoListBox .todo-wrap {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}

@@ -57,18 +57,16 @@ export default function timerReducer(state = INITIAL_STATE, action) {
         case JUMP:
             resetSoundElement(BEEP);
             if (state.isRunning) {
-                if (state.session) {
+                if (state.isSession) {
                     return {
                     ...state,
-                    isRunning: false,
                     current: state.break * 60,
                     isSession: false
                     }
                 } 
-                if (state.session) {
+                if (!state.isSession) {
                     return {
                     ...state,
-                    isRunning: false,
                     current: state.session * 60,
                     isSession: true
                     }

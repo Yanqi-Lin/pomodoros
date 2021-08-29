@@ -1,0 +1,37 @@
+html{
+  font-size: 25px;
+}
+
+.header {
+  height: 10vh;
+  border-bottom: 1px solid white;
+  min-height: 90px;
+
+}
+
+.nav {
+  height:30px;
+  line-height: 30px;
+  text-align: center;
+  background-color: rgb(167, 207, 245);
+}
+.nav-title {
+  font-weight: bold;
+}
+
+.sub-header{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+  }
+.target{
+    font-size: 1rem;
+}
+
+
+
+  @media screen and (max-width:600px){
+    html{
+        font-size:20px;
+    }
+  }

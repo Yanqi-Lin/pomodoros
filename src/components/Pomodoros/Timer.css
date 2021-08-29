@@ -2,7 +2,6 @@
     width: 300px;
     border-radius: 12px;
     background-color: rgba(255, 255, 255, 0);
-
 }
 
 .count-num{
@@ -14,4 +13,18 @@
     font-weight: 550;
     line-height: 26px;
     margin-top: 8px;
+}
+
+.todoButton{
+    display: none;
+    margin:auto;
+    margin-bottom: 10px;
+}
+
+@media (max-width:700px){
+    .todoButton{
+        display: block;
+        margin:auto;
+        margin-bottom: 10px;
+    }
 }

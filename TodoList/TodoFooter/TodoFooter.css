@@ -1,0 +1,8 @@
+.todoFooter{
+    padding:10px 10px 10px 10px;
+    overflow:hidden;
+    line-height: 32px;
+}
+.deleteAllButton {
+    float:right;
+}
