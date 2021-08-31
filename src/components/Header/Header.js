@@ -15,10 +15,11 @@ function Header() {
     }
   })
 
+
   return (
     <div className="header">
       <nav className="nav">
-        <span className="nav-title">Pomodoros &amp; TodoList</span>
+        <span className="nav-title">Pomodoros</span>
       </nav>
       <div className="sub-header">
         <span className="target">

@@ -34,20 +34,9 @@ function Timer(props) {
         return () => clearInterval(interval);
     })
 
-    const showTodo = () => {
-        const e = document.getElementsByClassName('TodoList');
-        e.style.display = 'block';
-    }
 
     return (
         <div>
-            {/* <Button
-                className='todoButton'
-                type="primary"
-                onClick={()=>document.getElementsByClassName('TodoList').display = 'block'}
-            >
-                Todo List
-            </Button> */}
             <Card className='mainCard'>
                 <Row gutter={[16, 20]}>
                     <Col span={12}>
