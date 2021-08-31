@@ -3,7 +3,6 @@ export const playSoundElement = (id) => {
     element.play();
 }
 
-
 export const resetSoundElement = (id) => {
     const element = document.getElementById(id);
     element.pause();

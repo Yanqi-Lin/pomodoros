@@ -1,8 +1,9 @@
 import { Progress } from 'antd';
 import './CountDown.css';
+import { connect } from 'react-redux';
 
 function CountDown(props) {
-    //换算剩余时间
+
     const mins = Math.floor(props.current / 60);
     const secs = props.current - mins * 60;
     //显示剩余时间
@@ -25,4 +26,13 @@ function CountDown(props) {
     )
 }
 
-export default CountDown;
+const mapStateToProps = (state) => {
+    return {
+        current: state.current,
+        isSession: state.isSession,
+        session: state.session,
+        break: state.break,
+    }
+}
+
+export default connect(mapStateToProps)(CountDown);

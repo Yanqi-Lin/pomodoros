@@ -1,8 +1,7 @@
-@import '~antd/dist/antd.css';
+/* @import '~antd/dist/antd.css'; */
 
 .TodoListBox {
   padding: 10px;
-  /* border: 1px solid #ddd; */
   border-radius: 5px;
   height:100%;
 }

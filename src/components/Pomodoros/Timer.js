@@ -27,11 +27,11 @@ function Timer(props) {
     useEffect(() => {
         let interval;
         if (props.isRunning) {
-            interval = setInterval(() => props.countDownAction(), 1000)
+            interval = setTimeout(() => props.countDownAction(), 1000)
         } else {
-            clearInterval(interval);
+            clearTimeout(interval);
         }
-        return () => clearInterval(interval);
+        return () => clearTimeout(interval);
     })
 
 
@@ -99,15 +99,10 @@ function Timer(props) {
                     </div>
                 </Row>
                 <Row justify={"center"} gutter={[16, 24]}>
-                    <CountDown
-                        current={props.current}
-                        isSession={props.isSession}
-                        session={props.session}
-                        break={props.break}
-                    />
+                    <CountDown/>
                 </Row>
                 <audio id='beep'>
-                    <source src='https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/audio/BeepSound.wav' type="audio/wav" />
+                    {/* <source src='https://raw.githubusercontent.com/freeCodeCamp/cdn/master/build/testable-projects-fcc/audio/BeepSound.wav' type="audio/wav" /> */}
                     <source src='%PUBLIC_URL%/build_testable-projects-fcc_audio_BeepSound.wav' type="audio/wav" />
                 </audio>
                 <Row justify={"space-around"} gutter={[16, 24]}>

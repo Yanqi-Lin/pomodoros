@@ -2,7 +2,6 @@
 
 The Pomodoro Technique is a time management method developed by Francesco Cirillo in the late 1980s.The technique uses a timer to break down work into intervals, traditionally 25 minutes in length, separated by short breaks last 5 minutes. Each interval is known as a pomodoro, from the Italian word for 'tomato', after the tomato-shaped kitchen timer that Cirillo used as a university student. If you want to know more about it, [click here](https://en.wikipedia.org/wiki/Pomodoro_Technique) to wikipedia.
 
-![image](https://user-images.githubusercontent.com/79801796/127756082-9c99c352-4630-4aea-a030-ce00c540e4d4.png)
 
 # 部署create-react-app项目到Github pages
 想让大家能在线上看到前端页面，使用Github pages是很好的选择！

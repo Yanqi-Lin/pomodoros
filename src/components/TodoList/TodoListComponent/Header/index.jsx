@@ -11,16 +11,11 @@ const Header = (props) => {
 		setInputValue(event.target.value)
 	}
 
-	//键盘事件的回调
 	const handleKeyUp = (event) => {
-		//准备好一个todo对象
 		const todoObj = { id: nanoid(), name: event.target.value, done: false }
-		//将todoObj传递给App
 		props.addTodo(todoObj)
-		//清空输入
 		setInputValue('')
 	}
-
 
 	return (
 		<div className="todo-header">
